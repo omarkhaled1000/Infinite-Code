@@ -8,10 +8,9 @@ body {
 #logo{
     width: 300px; 
     height: auto;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    position:absolute;
-    border: black solid 1px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 0px;
 }
 #logo_name{
     font-family:cursive;
@@ -24,7 +23,6 @@ body {
     position: absolute;
     bottom: 480px;
     left: 35px;
-    border: black solid 1px;
     
 }
 h1{position: absolute;left: 570px;bottom: 650px;}

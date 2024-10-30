@@ -22,29 +22,30 @@
   <main>
     <h1>Sign in</h1>
     <form action="/login" method="POST">
+        
+    <label for="username">Username or Email :</label>
+    <input type="text" id="username" name="username" required class="textarea">
+      <br>
+    <label for="password">Password :</label>
+    <input type="password" id="password" name="password" required id="password" class="textarea">
  
-    <label for="username">Username or Email</label>
-    <input type="text" id="username" name="username" required>
+      <br>
   
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
- 
-  
-    <label>Role:</label>
+  <br>
+  <button type="submit" id="login">Login</button>  <br>
+  <label>Role:</label>
    
-      <input type="radio" id="student" name="role" value="student" required>
+      <input type="radio" id="student_radio" name="role" value="student" required>
       <label for="student">Student</label>
     
     
-      <input type="radio" id="instructor" name="role" value="instructor" required>
+      <input type="radio" id="instructor_radio" name="role" value="instructor" required>
       <label for="instructor">Instructor</label>
     
   
   
     <input type="checkbox" id="remember" name="remember">
     <label for="remember">Remember Me</label>
-  
-  <button type="submit">Login</button>
   <p><a href="Reset_password.html">Forgot Password?</a></p>
   <p>Don’t have an account? <a href="Sign_up.html">Sign Up</a></p>
 </form></main>
