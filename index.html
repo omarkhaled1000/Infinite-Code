@@ -1,27 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My AdSense Website</title>
-
-  <!-- Google AdSense verification script -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX"
-          crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a web site for teaching programming in a simple organized way">
+    <meta name="author" content="Youssef,Aser,Omar,Badr">
+    <meta name="keywords" content="Web Full Stack,Frontend,Backend,programming,html,css,Js,Network,Cyber security,IT,IOT,Embedded sytems,AI,Robotics">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Code</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+   
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a test page to show Google AdSense ads.</p>
+  <style>
+    body {
 
-  <!-- Example Ad Unit -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-XXXXXXXXXXXX"
-       data-ad-slot="YYYYYYYYYY"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+   background-image: url('https://img.freepik.com/free-vector/gradient-smooth-background_23-2148969006.jpg?t=st=1730411526~exp=1730415126~hmac=21c7286ee61ef990c60c6dc0bf4586680bbcaef7afe672d50873543d3c09836c&w=996');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo{
+    width: 300px; 
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position:absolute;left: 610px;
+}
+#logo_name{
+  animation-name: colorchange;
+  color: coral;
+  text-shadow: 0px 0px 10px;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    font-family:cursive;
+  
+
+    font-size: 36px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 480px;
+    left: 650px;
+
+    
+}
+h1{position: absolute;left: 440px;bottom: 420px;}
+form {
+border: #020042 groove 10px;
+  position: absolute; top: 260px; right: 200px;
+    width: 620px; height: 250px;
+    padding: 5px 5px 5px 5px;
+    background-color: lightskyblue;
+    font-size: 30px;
+    position: absolute;
+    bottom: 320px;
+    right: 450px;
+
+}
+#password{position: relative; left: 117.5px;bottom: 5px;}
+#username{position: relative;;bottom: 2px;}
+#password,#username{background-color: black;color: aqua}
+input[type=text],input[type=password] { font-size: 20px;
+  box-sizing: border-box;
+}
+#password{
+top: 10px;}
+#pass_label{; position:relative; top: 12px;}
+#login{
+  position: relative; 
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+  
+    width:20%;
+    font-size: 20px;
+    color: rgb(0, 140, 255);
+    background-color: #020042;}
+    #login:hover {
+        background: blue;
+    }
+a{
+        color: blue;
+    }
+    a:hover {
+        background-color: black;
+    }
+    a:visited {
+        color: purple;
+      
+      }
+
+#links{
+  position: absolute;
+  margin-top:640px;
+left: 1300px;
+  padding-left: 0px; padding-top: 0px; padding-bottom: 0px; padding-right: 0px;
+  margin-left: 0px;
+
+  border: #020042 solid 1px;
+}      
+.link_lists{  display: inline;}
+.link_href{  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width;
+  color: cyan;
+  background-color: rgb(0, 0, 0);}
+.link_href:hover{  background: darkblue;}
+.sign_up_{display: inline-block;}
+
+@keyframes colorchange {
+    0% {color: coral; }
+    50% {color: purple; }
+    100% {color: coral; }
+}
+
+
+  </style>
+  <header>
+
+        <img src="https://pngimg.com/uploads/symbol_infinity/symbol_infinity_PNG31.png" alt="Infinite Code Logo" width="20px" id="logo">
+        <h1 id="logo_name">Infinite Code</h1>
+
+
+  </header>
+  <main>
+    <div id="form_box"></div>
+    <h1 id="sign_in__">Sign in :</h1>
+    <form action="/login" method="POST">
+        
+    <label for="username">Username or Email :</label>
+    <input type="text" id="username" name="username" required class="textarea" placeholder="example@gmail.com">
+      <br>
+    <label for="password" id="pass_label">Password :</label>
+    <input type="password" id="password" name="password" required id="password" class="textarea" placeholder="Enter your password">
+ 
+      <br>
+  
+  <br>
+  <div id="login_group">
+  <button type="submit" id="login">Login</button>  <br>
+   
+  
+  
+    <input type="checkbox" id="remember" name="remember">
+    <label for="remember">Remember Me</label></div>
+  <a href="Reset_password.html">Forgot Password?</a>
+  <br>Don’t have an account? <a href="Sign_up.html" class="sign_up_">Sign Up</a>
+</form></main>
+<ul id="links">
+  <li class="link_lists"><a href="#" class="link_href">FAQ</a></li>
+  <li class="link_lists"><a href="terms_of_use.html" class="link_href">Terms of Use</a></li>
+</ul>
 </body>
 </html>
